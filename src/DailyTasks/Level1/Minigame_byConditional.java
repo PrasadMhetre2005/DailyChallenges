@@ -24,7 +24,41 @@ public class Minigame_byConditional{
             }
             System.out.println("computer played " + computermove);
             System.out.println("play again ?\n yes\n no\n");
+            if (playermove.equals(computermove)) {
+                System.out.println("tie the match");
+            }
+            else if (playermove.equals("rock")) {
+                if (computermove.equals("paper")) {
+                    System.out.println("you are lose the match");
+                }
+                else if (computermove.equals("scissor")) {
+                    System.out.println("you will win the match");
 
+                }
+            }
+            else if (playermove.equals("paper")) {
+                if (computermove.equals("rock")) {
+                    System.out.println("you are win the match");
+                }
+                else if (computermove.equals("scissor")) {
+                    System.out.println("you will lose the match");
+
+                }
+            }
+            else if (playermove.equals("scissor")) {
+                if (computermove.equals("paper")) {
+                    System.out.println("you are win the match");
+                }
+                else if (computermove.equals("rock")) {
+                    System.out.println("you will lose the match");
+
+                }
+            }
+            String playagain=sc.nextLine();
+            if(!playagain.equals("yes")){
+                break;
+
+            }
 
 
 
